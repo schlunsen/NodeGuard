@@ -1,8 +1,23 @@
 # NodeGuard
 
-Treasury management is a key component of the operational management of a lightning node. Having a lightning node with a lot of funds can become a cumbersome task when you need to operate at a scale with proper security mechanisms, however, lightning channels need liquidity from a Bitcoin treasury. In this context, a bitcoin treasury is a way of describing the source of funds required to enable the operations of a lightning service provider such as ours. We identified in this process that we would like to reduce the threat surface to the maximum extent possible, remember the mantra, not your keys, not your coins. And this is what we wanted, having a way to open lightning channels without real access to the private keys for node operators. This way, no technical members would have access to the private keys, and the lightning nodes on-chain funds in hot wallets would be the minimum as possible (this is subject to the lightning implementation you might use). In this use case, Node Operators want to sleep at night without having to worry about managing the private keys of a bitcoin treasury with a decent amount of funds. So based on the principle of least privilege (PoLP), we decided to split this responsibility by developing NodeGuard, a treasury management solution for lightning nodes. NodeGuard is a web application written in ASP.NET Core Blazor to provide an easy and intuitive UI for non-technical fellows who manage a Bitcoin treasury in lightning nodes.
+Treasury management is an essential aspect of operating a Lightning node. However, managing a Lightning node with a significant amount of funds can be challenging and complex when it comes to security mechanisms. Lightning channels require liquidity from a Bitcoin treasury.
 
-Current features of NodeGuard are the following:
+
+We understand the importance of reducing the threat surface as much as possible, following the mantra "not your keys, not your coins." This is why we have developed a way to open lightning channels without granting access to private keys for node operators.
+
+NodeGuard is a treasury management solution for lightning nodes that allows you to manage your Bitcoin treasury without worrying about managing private keys. NodeGuard is a web application written in ASP.NET Core Blazor that provides an intuitive and easy-to-use UI for non-technical users who manage a Bitcoin treasury in lightning nodes.
+
+With NodeGuard, you can rest easy knowing that your on-chain funds are secure, and your lightning channels have the necessary liquidity to operate at scale with proper security mechanisms.
+
+
+## Benefits of using NodeGuard
+* No access to private keys for technical members
+* Easy to use and intuitive web application
+* Secure management of your Bitcoin treasury
+* Reduced risk and increased peace of mind
+
+----------------------
+## Features
 
 - Funding and opening of a lightning channel through read-only(no private key access) multisig wallets
 - Asynchronous approval process based on Role-based Access Control (RBAC) and multisig wallets.
